@@ -23,12 +23,24 @@ public class StringOperations {
    	
    	
    	public void numberOfUppercaseChar(String userInput) {
-   		
+   		int uppercaseLetters = 0;
+		for (int i = 0; i <= userInput.length() - 1; i++){
+			if (Character.isUpperCase(userInput.charAt(i))){
+				uppercaseLetters++;
+			}
+		}
+		System.out.println("\nNumber of uppercase letters: " + uppercaseLetters);
    	}
 
    	
    	public void numberOfLowercaseChar(String userInput) {
-   		
+   		int lowercaseLetters = 0;
+		for (int i = 0; i <= userInput.length() - 1; i++){
+			if (Character.isLowerCase(userInput.charAt(i))){
+				lowercaseLetters++;
+			}
+		}
+		System.out.println("Number of lowercase letters: " + lowercaseLetters);
    	}
 
    	public void allCharactersWithoutLetters(String userInput) {
